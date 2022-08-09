@@ -1,0 +1,29 @@
+.row{
+    padding: 20px;
+}
+
+@media (min-width: 576px){
+    #fotodeperfil{
+        position: absolute;
+        width: 152px;
+        height: 152px;
+        border-radius: 100%;
+        top: 280px;
+    }
+}
+
+@media (max-width: 576px){
+    #fotodeperfil{
+        position: absolute;
+        width: 152px;
+        height: 152px;
+        border-radius: 100%;
+        left: 33%;
+        top: 80%;
+    }
+}
+
+#nombre{
+    font-weight: bold;
+    margin-top: 30%;
+}
