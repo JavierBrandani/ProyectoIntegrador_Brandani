@@ -9,7 +9,8 @@
             <a href=""> <img src="../../../assets/instagram.png" alt="instagram"> </a>
             <a href=""> <img src="../../../assets/github.png" alt="githug"> </a>
             <a href=""> <img src="../../../assets/facebook.png" alt="facebook"> </a>
-            <button type="button" class="btn btn-outline-light" (click)="login()">INGRESO</button>
+            <button type="button" class="btn btn-outline-light" (click)="login()" *ngif="!isLogged">INGRESO</button>
+            <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngif="isLogged">CERAR SESION</button>
         </div>
     </div>
 
