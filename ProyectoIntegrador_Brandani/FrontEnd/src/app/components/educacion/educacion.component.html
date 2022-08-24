@@ -1,30 +1,31 @@
 <div class="row">
     <h1>Educacion</h1>
-    <div class="col-lg-1"></div>
-    <div class="col-lg-11">
-        <ul>
-            <li>
-                <h1>Doctorado en Química Biológica | </h1> <h3> 2014-2020</h3>
-            </li>
-            <p>
-                Tesis: “Estudio de la vía de los receptores
-hormonales y los factores de transcripción forkhead
-box (FOX) en el cáncer de próstata”.
-            </p>
-        </ul>
-        <ul>
-            <li>
-                <h1>Licenciatura en Ciencias Biológicas |</h1> <h3> 20007-2014</h3>
-            </li>
-            <p>
-                Tesis de licenciatura: “Efecto de una preparación
-comercial de glifosato y de una sal de cromo sobre
-la proliferación y diferenciación a adipocitos de
-fibroblastos 3T3-L1”.
-            </p>
-        </ul>
-
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
+            Agregar Educacion
+        </button>
     </div>
 
+    <div class="col lg 1"></div>
+    <div class="col-lg-11">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Educacion of educacion">
+                    <td>
+                        <h2>{{Educacion.nombreE}}</h2>
+                    </td>
+                    <td>{{Educacion.descripcionE}}</td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}">
+                            <i class="bi bi-pencil-fill"></i> EDITAR</button>
+                    </td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-danger" (click)="delete(Educacion.id)">
+                            <i class="bi bi-trash-fill"></i> BORRAR</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
 </div>
