@@ -11,8 +11,8 @@
     <groupId>com.portfolio</groupId>
     <artifactId>Brandani</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Brandani</name>
-    <description>Portfolio Bradani</description>
+    <name>Brandani.Produccion</name>
+    <description>Portfolio de Brandani</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>
@@ -51,12 +51,11 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-security -->
+        
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt -->
         <dependency>
             <groupId>io.jsonwebtoken</groupId>
             <artifactId>jjwt</artifactId>
@@ -65,15 +64,9 @@
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
-            <version>3.8.1</version>
-            <type>jar</type>
+            <version>3.9</version>
         </dependency>
-        
 
-
-
-
-                
     </dependencies>
 
     <build>

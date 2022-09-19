@@ -1,10 +1,12 @@
-
 package com.portfolio.Brandani.Security.Dto;
 
 import java.util.HashSet;
 import java.util.Set;
 
-
+/**
+ *
+ * @author Usuario
+ */
 public class NuevoUsuario {
     private String nombre;
     private String nombreUsuario;
@@ -12,8 +14,7 @@ public class NuevoUsuario {
     private String password;
     private Set<String> roles = new HashSet<>();
     
-    
-    //getter and setter
+    //Gettes & Setters
 
     public String getNombre() {
         return nombre;
@@ -54,7 +55,5 @@ public class NuevoUsuario {
     public void setRoles(Set<String> roles) {
         this.roles = roles;
     }
-    
-    
     
 }

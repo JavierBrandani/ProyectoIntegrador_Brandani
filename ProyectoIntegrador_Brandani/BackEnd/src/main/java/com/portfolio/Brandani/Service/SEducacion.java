@@ -1,5 +1,5 @@
-
 package com.portfolio.Brandani.Service;
+
 
 import com.portfolio.Brandani.Entity.Educacion;
 import com.portfolio.Brandani.Repository.REducacion;
@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 @Transactional
-public class SEducacion {
+public class Seducacion {
     @Autowired
     REducacion rEducacion;
     

@@ -1,4 +1,3 @@
-
 package com.portfolio.Brandani.Security.Entity;
 
 import com.portfolio.Brandani.Security.Enums.RolNombre;
@@ -10,7 +9,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 
-
 @Entity
 public class Rol {
     @Id
@@ -21,7 +19,6 @@ public class Rol {
     private RolNombre rolNombre;
     
     //Constructor
-
     public Rol() {
     }
 
@@ -29,7 +26,7 @@ public class Rol {
         this.rolNombre = rolNombre;
     }
     
-    //Getter y Setters
+    //Getter y Setter
 
     public int getId() {
         return id;

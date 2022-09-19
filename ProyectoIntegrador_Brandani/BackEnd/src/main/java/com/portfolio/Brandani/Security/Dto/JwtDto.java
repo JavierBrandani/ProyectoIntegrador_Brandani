@@ -1,17 +1,19 @@
-
 package com.portfolio.Brandani.Security.Dto;
 
 import java.util.Collection;
 import org.springframework.security.core.GrantedAuthority;
 
-
+/**
+ *
+ * @author Usuario
+ */
 public class JwtDto {
     private String token;
     private String bearer = "Bearer";
     private String nombreUsuario;
     private Collection<? extends GrantedAuthority> authorities;
     
-    //constructor
+    //Constructor
 
     public JwtDto(String token, String nombreUsuario, Collection<? extends GrantedAuthority> authorities) {
         this.token = token;
@@ -19,7 +21,7 @@ public class JwtDto {
         this.authorities = authorities;
     }
     
-    // getter and setters
+    //Getters and Setters
 
     public String getToken() {
         return token;
@@ -52,6 +54,5 @@ public class JwtDto {
     public void setAuthorities(Collection<? extends GrantedAuthority> authorities) {
         this.authorities = authorities;
     }
-    
     
 }

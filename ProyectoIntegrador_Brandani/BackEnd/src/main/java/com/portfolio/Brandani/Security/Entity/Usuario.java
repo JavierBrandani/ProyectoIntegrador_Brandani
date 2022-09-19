@@ -1,4 +1,3 @@
-
 package com.portfolio.Brandani.Security.Entity;
 
 import java.util.HashSet;
@@ -32,7 +31,7 @@ public class Usuario {
     @JoinTable(name = "usuario_rol", joinColumns = @JoinColumn(name ="usuario_id"), inverseJoinColumns = @JoinColumn(name = "rol_id"))
     private Set<Rol> roles = new HashSet<>();
     
-    //Constructor
+    //Constructores
 
     public Usuario() {
     }
@@ -44,7 +43,7 @@ public class Usuario {
         this.password = password;
     }
     
-    //Getter y setter
+    //Getter Y Setter
 
     public int getId() {
         return id;
@@ -94,5 +93,4 @@ public class Usuario {
         this.roles = roles;
     }
     
-
 }

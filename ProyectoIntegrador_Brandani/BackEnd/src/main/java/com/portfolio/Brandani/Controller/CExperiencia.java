@@ -1,4 +1,3 @@
-
 package com.portfolio.Brandani.Controller;
 
 import com.portfolio.Brandani.Dto.dtoExperiencia;
@@ -22,7 +21,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/explab")
-@CrossOrigin(origins = "https://frontend-8d148.web.app")
+//@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://mgbfrontend.web.app")
 public class CExperiencia {
     @Autowired
     SExperiencia sExperiencia;

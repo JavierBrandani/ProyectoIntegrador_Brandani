@@ -4,20 +4,16 @@ package com.portfolio.Brandani.Interface;
 import com.portfolio.Brandani.Entity.Persona;
 import java.util.List;
 
-
-
 public interface IPersonaService {
-    
-    //traer lista de personas
+    //Traer una lista de personas
     public List<Persona> getPersona();
     
     //Guardar un objeto de tipo Persona
     public void savePersona(Persona persona);
     
-    //eliminar objeto buscado por ID
+    //Eliminar un objeto pero lo buscamos por ID
     public void deletePersona(Long id);
     
-    //Buscar Persona
+    //Buscar una persona por ID
     public Persona findPersona(Long id);
-    
 }

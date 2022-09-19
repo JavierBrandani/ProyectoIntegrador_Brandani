@@ -1,16 +1,18 @@
-
 package com.portfolio.Brandani.Security.Dto;
 
 import javax.validation.constraints.NotBlank;
 
-
+/**
+ *
+ * @author Usuario
+ */
 public class LoginUsuario {
     @NotBlank
     private String nombreUsuario;
     @NotBlank
     private String password;
     
-    // getter and setters
+    //Getter & Setter
 
     public String getNombreUsuario() {
         return nombreUsuario;
@@ -27,6 +29,5 @@ public class LoginUsuario {
     public void setPassword(String password) {
         this.password = password;
     }
-    
     
 }

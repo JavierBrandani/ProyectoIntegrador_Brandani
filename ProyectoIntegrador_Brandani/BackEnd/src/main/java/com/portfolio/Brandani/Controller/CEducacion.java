@@ -3,7 +3,7 @@ package com.portfolio.Brandani.Controller;
 import com.portfolio.Brandani.Dto.dtoEducacion;
 import com.portfolio.Brandani.Entity.Educacion;
 import com.portfolio.Brandani.Security.Controller.Mensaje;
-import com.portfolio.Brandani.Service.SEducacion;
+import com.portfolio.Brandani.Service.Seducacion;
 import java.util.List;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,10 +21,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/educacion")
-@CrossOrigin(origins = "https://frontend-8d148.web.app")
+//@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://mgbfrontend.web.app")
 public class CEducacion {
     @Autowired
-    SEducacion sEducacion;
+    Seducacion sEducacion;
     
     @GetMapping("/lista")
     public ResponseEntity<List<Educacion>> list(){

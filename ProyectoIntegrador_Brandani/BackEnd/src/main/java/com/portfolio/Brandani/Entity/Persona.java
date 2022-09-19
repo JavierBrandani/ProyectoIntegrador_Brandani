@@ -1,4 +1,3 @@
-
 package com.portfolio.Brandani.Entity;
 
 import javax.persistence.Entity;
@@ -21,12 +20,13 @@ public class Persona {
     @Size(min = 1, max = 50, message = "no cumple con la longitud")
     private String nombre;
     
-     @NotNull
+    @NotNull
     @Size(min = 1, max = 50, message = "no cumple con la longitud")
     private String apellido;
     
     @Size(min = 1, max = 50, message = "no cumple con la longitud")
     private String img;
 
+       
     
 }
