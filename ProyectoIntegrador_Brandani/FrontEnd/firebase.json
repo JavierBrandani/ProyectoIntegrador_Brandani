@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/proyecto-integrador-brandani",
+    "public": "dist\\proyecto-integrador-brandani",
     "ignore": [
       "firebase.json",
       "**/.*",
