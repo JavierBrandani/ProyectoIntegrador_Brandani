@@ -1,0 +1,42 @@
+<div class="card mat-card" id="first-card">
+    <div id="profile-background"><img [src]="miPorfolio.backImage" alt="Card image" style="width:100%" height="200px"></div>
+    <div id="info" style="padding: 16px">
+    
+    <div id="info-img">       
+    <img class="profile-image" [src]="miPorfolio.image"  alt="foto de perfil" width="304" height="236"> 
+    
+    <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen"> </i> </a> </div> </div>
+    </div>
+    
+    <div id="info-data">
+    <div>
+    <h1>{{miPorfolio.name}}</h1>
+    <div id="info-company">{{miPorfolio.company.name}}</div>
+    <div id="info-contact">
+      <span>{{miPorfolio.ubication}}</span>
+      <div>
+      <span><a [href]="miPorfolio.company.url">{{miPorfolio.company.contacto}}</a></span>  
+      </div>
+    </div>
+    </div>
+    <!-- min 35:33 -->
+    
+    <ul id="info-details">
+      <li> <a href="#">
+    <img [src]="miPorfolio.company.img">
+    <h2>{{miPorfolio.company.name}}</h2>
+      </a></li>
+    <li> <a href="#">
+      <img [src]="miPorfolio.school.img">
+      <h2>{{miPorfolio.school.name}}</h2>
+      </a> </li>
+      </ul>
+    </div>
+    
+      <div id="info-actions">
+    <button type="button" class="btn btn-primary">Tengo interes en</button>
+    <button type="button" class="btn btn-light">Añadir sección</button>
+    <button type="button" class="btn btn-light">Mas</button>
+      </div>
+      
+    </div>
