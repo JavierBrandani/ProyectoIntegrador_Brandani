@@ -1,6 +1,7 @@
 com\portfolio\Brandani\Security\Entity\UsuarioPrincipal.class
 com\portfolio\Brandani\Repository\REducacion.class
 com\portfolio\Brandani\Security\Service\UserDetailsImpl.class
+com\portfolio\Brandani\Dto\dtoPersona.class
 com\portfolio\Brandani\Dto\dtoExperiencia.class
 com\portfolio\Brandani\Repository\RExperiencia.class
 com\portfolio\Brandani\Entity\Educacion.class
