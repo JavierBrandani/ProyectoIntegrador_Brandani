@@ -10,7 +10,8 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
   providedIn: 'root'
 })
 export class AuthService {
-  URL = 'https://bkd-brandani.herokuapp.com/auth/';
+  //URL = 'https://bkd-brandani.herokuapp.com/auth/';
+  URL = 'https://messi.keen-kellen.koyeb';
 
   constructor(private httpClient: HttpClient) { }
 

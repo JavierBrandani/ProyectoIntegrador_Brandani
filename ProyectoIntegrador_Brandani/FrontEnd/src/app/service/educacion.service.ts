@@ -8,7 +8,8 @@ import { Educacion } from '../model/educacion';
   providedIn: 'root'
 })
 export class EducacionService {
-  URL ='https://bkd-brandani.herokuapp.com/educacion/';
+  //URL = 'https://bkd-brandani.herokuapp.com/auth/';
+  URL = 'https://messi.keen-kellen.koyeb';
 
   constructor(private httpClient : HttpClient) { }
 

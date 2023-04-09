@@ -9,7 +9,8 @@ import { Skill } from '../model/skill';
   providedIn: 'root'
 })
 export class SkillService {
-  URL ='https://bkd-brandani.herokuapp.com/skill/';
+  //URL = 'https://bkd-brandani.herokuapp.com/auth/';
+  URL = 'https://messi.keen-kellen.koyeb';
   
   constructor(private httpClient: HttpClient) { }
 
