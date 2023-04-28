@@ -11,7 +11,7 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
 })
 export class AuthService {
   //URL = 'https://bkd-brandani.herokuapp.com/auth/';
-  URL = 'https://messi.keen-kellen.koyeb';
+  URL = 'https://messi.keen-kellen.koyeb/auth/';
 
   constructor(private httpClient: HttpClient) { }
 

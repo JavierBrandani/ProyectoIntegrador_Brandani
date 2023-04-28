@@ -9,8 +9,8 @@ import { persona } from '../model/persona.model';
 })
 
 export class PersonaService {
-//URL = 'https://bkd-brandani.herokuapp.com/auth/';
-URL = 'https://messi.keen-kellen.koyeb';
+//URL = 'https://bkd-brandani.herokuapp.com/persona/';
+URL = 'https://messi.keen-kellen.koyeb/persona/';
 
   constructor(private http: HttpClient) { }
 
