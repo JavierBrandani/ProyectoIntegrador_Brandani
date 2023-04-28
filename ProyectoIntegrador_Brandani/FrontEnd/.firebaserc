@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "frontend2-ab98c"
-  }
+    "default": "frontend3-f381b",
+    "frontend3": "frontend3-f381b"
+  },
+  "targets": {},
+  "etags": {}
 }
